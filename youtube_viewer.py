@@ -568,9 +568,7 @@ def main_viewer(proxy_type, proxy, position):
                 status = quit_driver(driver, pluginfile)
                 pass
 
-    except UrlsError:
-        print(timestamp() + bcolors.FAIL +
-              f"Tried {position} | Your urls.txt is empty!" + bcolors.ENDC)
+   
 
         create_html(
             {"#f14c4c": f"Tried {position} | Your urls.txt is empty!"})
